@@ -21,6 +21,7 @@ public class Book implements Serializable {
 	private String description;
 	private String category;
 	private String author;	
+	private boolean available;
 
 	
 	public long getId() {
@@ -52,6 +53,12 @@ public class Book implements Serializable {
 	}
 	public void setCategory(String category) {
 		this.category = category;
+	}
+	public boolean isAvailable() {
+		return available;
+	}
+	public void setAvailable(boolean available) {
+		this.available = available;
 	}
 
 
