@@ -46,6 +46,6 @@ public class ClientController {
 	
 	@PutMapping("/client")
 	public Client  editClient(@RequestBody Client client) {
-		return clientRepository.save(client);
+		return clientRepository.save(client); 
 	}
 }
