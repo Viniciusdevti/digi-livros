@@ -17,8 +17,12 @@ public class Book implements Serializable {
 	@Id	
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
-	
 	private String title;
+	private String description;
+	private String category;
+	private String author;	
+
+	
 	public long getId() {
 		return id;
 	}
@@ -43,7 +47,12 @@ public class Book implements Serializable {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	private String description;
-	private String author;
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
 
 }
