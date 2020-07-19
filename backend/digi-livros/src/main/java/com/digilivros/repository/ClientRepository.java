@@ -1,5 +1,11 @@
 package com.digilivros.repository;
 
-public interface ClientRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.digilivros.models.Client;
+
+public interface ClientRepository extends JpaRepository<Client, Long> {
+	
+	Client findById(long id);
 
 }
