@@ -1,5 +1,9 @@
 package com.digilivros.repository;
 
-public interface RentRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.digilivros.models.Rent;
+
+public interface RentRepository extends JpaRepository<Rent, Long> {
 
 }

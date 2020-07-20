@@ -1,6 +1,8 @@
 package com.digilivros.models;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,6 +23,8 @@ public class Client implements Serializable{
 	private String name;
 	private String tel;
 	private String cpf;
+	
+
 	
 	public long getId() {
 		return id;

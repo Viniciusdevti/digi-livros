@@ -1,5 +1,6 @@
 package com.digilivros.controller;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,10 @@ import com.digilivros.repository.ClientRepository;
 public class ClientController {
 
 	@Autowired
-	ClientRepository clientRepository;
+		ClientRepository clientRepository;
+	
+	Client client = new  Client();
+
 
 	@GetMapping("client")
 	public List<Client> ListClient() {
@@ -35,6 +39,8 @@ public class ClientController {
 	
 	@PostMapping("/client")
 	public Client  saveClient(@RequestBody Client client) {
+		
+	
 		return clientRepository.save(client);
 	}
 
