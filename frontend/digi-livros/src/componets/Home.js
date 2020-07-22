@@ -7,7 +7,7 @@ export default  function Header() {
   return (
     <div>
     
- <h1> LIVROS</h1>
+ <h1> HOME</h1>
 
     </div>
   );

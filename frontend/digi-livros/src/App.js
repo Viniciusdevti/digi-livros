@@ -1,12 +1,18 @@
 import React from 'react';
 
-import Header from "./Header"
+import './global.css'
+
+import Routes from './routes';
+import Header from './Header';
 
 function App() {
   return (
-    <div className="App">
-    
+    <div>
+  
+  
     <Header></Header>
+    <Routes/>
+   
     </div>
   );
 }
