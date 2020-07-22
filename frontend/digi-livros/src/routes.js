@@ -11,14 +11,14 @@ import Home from "./componets/Home";
 
 export default function  Routes() {
   return (
-        <BrowserRouter>
+     
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/register" component={Book} />
-        <Route path="/profile" component={Client} />
-        <Route path="/incidents/new" component={Rent} />
-        <Route path="/redeemid" component={Dash} />
+        <Route path="/book" component={Book} />
+        <Route path="/client" component={Client} />
+        <Route path="/rent" component={Rent} />
+        <Route path="/dash" component={Dash} />
       </Switch>
-    </BrowserRouter>
+    
   );
 }

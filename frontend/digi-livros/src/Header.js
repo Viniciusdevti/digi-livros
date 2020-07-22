@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import { Link} from "react-router-dom";
 import "./global.css"
 
 export default  function Header() {
@@ -8,20 +8,22 @@ export default  function Header() {
     <div>
     
 <nav>
-<div class="nav-wrapper blue lighten-2">
-  
-  <a href="#" className="brand-logo  "> <i class="material-icons">style</i> Digilivros </a>
+<div className="nav-wrapper blue lighten-2">
+
+      <Link to="/" className="brand-logo "> <i className="material-icons">style</i> Digilivros </Link>
+    
   <ul id="nav-mobile" className="right hide-on-med-and-down ">
-    <li><a  calshref="sass.html ">Clientes</a></li>
-    <li><a href="badges.html">Livros</a></li>
-    <li><a href="collapsible.html">Aluguel</a></li>
+
+    <li><Link to="/client">Cliente</Link></li>
+    <li><Link to="/book">Livros</Link></li>
+    <li><Link to="/rent">Aluguel</Link></li>
+  
+  </ul>
 
  
-
-
-  </ul>
 </div>
 </nav>
+
     </div>
   );
 }
