@@ -4,6 +4,8 @@ import "../global.css"
 
 
 export default function Client() {
+
+
   return (
 
     <div>
