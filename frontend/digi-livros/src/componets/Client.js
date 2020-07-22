@@ -7,6 +7,12 @@ import api from "../services/api";
 export default function Client() {
 
   const [client, setClient] = useState([]);
+  const [name, setName] = useState("");
+  const [cpf, setCpf] = useState("");
+  const [tel, setTel] = useState("");
+
+
+
  
 
   useEffect(
@@ -16,7 +22,17 @@ export default function Client() {
       });
     },[client]);
 
-
+    async function handleClient(e){
+      e.preventDefault();
+      const data = {name, cpf, tel}
+      try {
+        await api.post('client', data)
+        alert(`Cliente ${name} cadastrado com sucesso`)
+        
+          } catch(err) {
+        alert('Erro ao cadastrar caso, tente novamente.')
+      }
+    }
 
 
   return (
@@ -32,14 +48,28 @@ export default function Client() {
     <div class="container">
 
     
-<form>
+<form onSubmit={handleClient}>
 
     <label>Nome</label>
-    <input type="text" placeholder="Nome"/> 
+    <input 
+    type="text"
+     placeholder="Nome"
+     value={name}
+     onChange={e => setName(e.target.value)}
+     /> 
     <label>CPF</label>
-    <input  placeholder="000.111.222-33"/>
+    <input 
+     placeholder="000.111.222-33"
+     value={cpf}
+     onChange={e => setCpf(e.target.value)}
+     />
     <label>Telefone</label>
-    <input type="text" placeholder="(83) 99911-2233"/>
+    <input 
+    type="text" 
+    placeholder="(83) 99911-2233"
+    value={tel}
+    onChange={e => setTel(e.target.value)}
+    />
 
     <button class="waves-effect waves-light btn-small">Salvar<i class="material-icons left">save</i></button>
 
