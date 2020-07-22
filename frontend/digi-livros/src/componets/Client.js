@@ -28,10 +28,18 @@ export default function Client() {
       try {
         await api.post('client', data)
         alert(`Cliente ${name} cadastrado com sucesso`)
+        clean()
+
         
           } catch(err) {
         alert('Erro ao cadastrar caso, tente novamente.')
       }
+    }
+
+    function clean (){
+      setName("")
+      setCpf("")
+      setTel("")
     }
 
 
@@ -71,7 +79,7 @@ export default function Client() {
     onChange={e => setTel(e.target.value)}
     />
 
-    <button class="waves-effect waves-light btn-small">Salvar<i class="material-icons left">save</i></button>
+    <button  class="waves-effect waves-light btn-small">Salvar<i class="material-icons left">save</i></button>
 
 </form>
 <table>
