@@ -1,9 +1,22 @@
 
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import "../global.css"
 
+import api from "../services/api";
 
 export default function Client() {
+
+  const [client, setClient] = useState([]);
+ 
+
+  useEffect(
+    () => {
+      api.get("client").then((response) => {
+        setClient(response.data);
+      });
+    },[client]);
+
+
 
 
   return (
@@ -18,12 +31,13 @@ export default function Client() {
       </div>
     <div class="container">
 
+    
 <form>
 
     <label>Nome</label>
     <input type="text" placeholder="Nome"/> 
     <label>CPF</label>
-    <input type="number" placeholder="000.111.222-33"/>
+    <input  placeholder="000.111.222-33"/>
     <label>Telefone</label>
     <input type="text" placeholder="(83) 99911-2233"/>
 
@@ -33,31 +47,21 @@ export default function Client() {
 <table>
 
   <thead>
-
+  {client.map((cliente) => (
     <tr>
-      <th>Nome</th>
-      <th>CPF</th>
-      <th>Telefone</th>
-    </tr>
-
-  </thead>
-
-  <tbody>
-
-    <tr v-for="user of users">
-
-      <td></td>
-     
-    
+      <th>Nome: {cliente.name}</th>
+     <th>CPF: {cliente.cpf}</th>
+      <th>Telefone: {cliente.tel}</th>
       <td>
         <button class="waves-effect btn-small blue darken-1"><i class="material-icons">create</i></button>
         <button  class="waves-effect btn-small red darken-1"><i class="material-icons">delete_sweep</i></button>
       </td>
-
     </tr>
 
-  </tbody>
+   ))}
+  </thead>
 
+  
 </table>
 
 </div>
