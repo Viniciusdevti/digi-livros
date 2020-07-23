@@ -7,7 +7,7 @@ Gerenciamento de uma loja que aluga livros.
 <p align="center">
   <a href="#-project-theme">Tema do projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#construction-project-developed">Projeto desenvolvido</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#pushpin-technologies">Tecnologias</a>
+  <a href="#pushpin-technologies">Tecnologias</a>|&nbsp;&nbsp;&nbsp;
   <a href="#pushpin-technologies">Clone</a>
 	
 
