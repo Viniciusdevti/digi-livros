@@ -11,8 +11,6 @@ export default function Client() {
   const [cpf, setCpf] = useState("");
   const [tel, setTel] = useState("");
 
-
-
  
 
   useEffect(
@@ -41,6 +39,7 @@ export default function Client() {
       setCpf("")
       setTel("")
     }
+   
 
 
   return (
@@ -84,9 +83,10 @@ export default function Client() {
 </form>
 <table>
 
-  <thead>
+  <thead >
   {client.map((cliente) => (
-    <tr>
+    <tr key={cliente.id}>
+      
       <th>Nome: {cliente.name}</th>
      <th>CPF: {cliente.cpf}</th>
       <th>Telefone: {cliente.tel}</th>
