@@ -8,6 +8,8 @@ Gerenciamento de uma loja que aluga livros.
   <a href="#-project-theme">Tema do projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#construction-project-developed">Projeto desenvolvido</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#pushpin-technologies">Tecnologias</a>
+  <a href="#pushpin-technologies">Clone</a>
+	
 
 </p>
 
@@ -22,7 +24,7 @@ O digi livro foi desenvolvido para facilitar o gerenciamento de alugueis de livr
 
 <p align="center">
 	
- <img   src="https://github.com/Viniciusdevti/digi-livros/blob/master/assets/home.PNG">
+ <img   src="https://github.com/Viniciusdevti/digi-livros/blob/master/assets/home.png">
  <img   src="https://github.com/Viniciusdevti/digi-livros/blob/master/assets/Clientes.PNG">
  <img   src="https://github.com/Viniciusdevti/digi-livros/blob/master/assets/aluguel.PNG" align="center">
   <img   src="https://github.com/Viniciusdevti/digi-livros/blob/master/assets/livros.PNG">
@@ -45,4 +47,10 @@ O digi livro foi desenvolvido para facilitar o gerenciamento de alugueis de livr
 * Spring data :white_check_mark:
 
 * PostgreSQL  :white_check_mark:
+
+
+## :pushpin: Clone
+
+
+
 
