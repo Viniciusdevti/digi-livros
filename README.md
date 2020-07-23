@@ -22,7 +22,7 @@ O digi livro foi desenvolvido para facilitar o gerenciamento de alugueis de livr
 
 <p align="center">
 	
-	<img   src="https://github.com/Viniciusdevti/digi-livros/blob/master/assets/home.PNG">
+ <img   src="https://github.com/Viniciusdevti/digi-livros/blob/master/assets/home.PNG">
  <img   src="https://github.com/Viniciusdevti/digi-livros/blob/master/assets/Clientes.PNG">
  <img   src="https://github.com/Viniciusdevti/digi-livros/blob/master/assets/aluguel.PNG" align="center">
   <img   src="https://github.com/Viniciusdevti/digi-livros/blob/master/assets/livros.PNG">
